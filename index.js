@@ -1064,10 +1064,10 @@ calc_globalevent.fn.QuoteFunction = function (fnName, param) {
 				// console.log('response.status', response.status);
 
 				if (response.status == "Success") {
-					$("#bene1, #bene3").prop("disabled", false);
-					var bene1 = $("#bene1").is(":checked")
+                    $("#bene1, #bene3").prop("disabled", false);
 					if(CIStatus){
-						$("#bene1").prop("checked",true)
+						// $("#bene1").prop("checked",true)
+                        $("#bene1").click()
 					}else{
 						$("#bene1").prop("checked",false)
 					}
